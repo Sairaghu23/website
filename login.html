@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+iframe {
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  pointer-events: auto;
+}
+fieldset{
+width:500px;
+border-color:black;
+}
+input{
+width: 300px;
+height:30px;
+border-radius:5px;
+}
+#submit{
+cursor:pointer;
+width:200px;
+}
+#submit:hover{
+color:blue;
+border-radius:5px;
+}
+</style>
+<!-- Add this in the head section of your HTML -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+</head>
+<body>
+<script src="login.js">
+</script>
+<center>
+<div id="form_position">
+<form onsubmit="a(event)">
+<fieldset>
+<legend style="font-size:30px;">Login</legend>
+<input type="text" size="20" required id="us" placeholder="Username"><br><br>
+ <input type="password" size="20" id="ps" required placeholder="password"><br><br>
+  <input type="submit" id="submit" value="SUBMIT">
+</fieldset>
+</form>
+</div>
+</center>
+<div id="pdfViewer">
+  <!-- PDF pages will be rendered here dynamically -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head>
+<style>
+#click
+{
+text-decoration: none;
+}
+#info_panel{
+border-style:inset;
+width:600px;
+height: 400px;
+}
+#position{
+margin-top: 100px;
+}
+</style>
+</head>
+<body>
+<marquee>
+<p style="font-size:30px;"><span id="smoke-effect">Note</span>:WebSite Created By Diploma Final Year Students CME</p>
+</marquee>
+<script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    const smokeEffect = document.getElementById('smoke-effect');
+
+    setInterval(() => {
+      const randomColor = getRandomColor();
+      smokeEffect.style.color = randomColor;
+    }, 1000);
+  </script>
+<center id="position">
+<div id="info_panel">
+<label> </label>
+<p style="font-size:25px; font-style:italic;">Road Map For Diploma CME(1st Year):<a href="qwer.html" id="click">Click Here</a></p>
+<p style="font-size:25px; font-style:italic;">Road Map For Diploma ECE (1st Year):<a href="#" id="click">Click Here</a></p>
+<p style="font-size:25px; font-style:italic;">Road Map For Diploma EEE(1st Year):<a href="#" id="click">Click Here</a></p>
+<p style="font-size:25px; font-style:italic;">Road Map For Diploma EEE(3rd Sem):<a href="#" id="click">Click Here</a></p>
+<p style="font-size:25px; font-style:italic;">Road Map For Diploma EEE3rd Sem):<a href="#" id="click">Click Here</a></p>
+<p style="font-size:25px; font-style:italic;">Road Map For Diploma EEE(3rd Sem):<a href="#" id="click">Click Here</a></p>
+<p style="font-size:25px; font-style:italic;">Road Map For Diploma EEE(3rd Sem):<a href="#" id="click">Click Here</a></p>
+</div>
+</center>
+</body>
+</html>
